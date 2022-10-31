@@ -1,0 +1,8 @@
+[
+    {
+      "origin": ["https://jordanbaileyresume.com"],
+      "method": ["GET"],
+      "responseHeader": "*",
+      "maxAgeSeconds": 3600
+    }
+]
