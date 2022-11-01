@@ -103,14 +103,9 @@ jobs:
           destination: 'jordanbaileycrc'
 
 
-#       - name: Setup Terraform
-#         uses: hashicorp/setup-terraform@v1
+      - name: Invalidate Cache
+        run: gcloud compute url-maps invalidate-cdn-cache cloudresume-lb --path "/*"
 
-#       - name: Terraform Init
-#         run: terraform init
-
-#       - name: Terraform Apply
-#         run: terraform apply -auto-approve
 
       # If required, use the Cloud Run url output in later steps
       - name: Show Output
